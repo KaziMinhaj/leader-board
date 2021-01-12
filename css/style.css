@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(87, 97, 233);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+section {
+  background-color: honeydew;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
+}
+main {
+  width: 900px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.top-players,
+.blog-container,
+.courses {
+  display: grid;
+  grid-gap: 30px;
+  margin-top: 20px;
+  /* place-items: center; */
+}
+.top-players,
+.courses {
+  grid-template-columns: repeat(3, 1fr);
+}
+.blog-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.player,
+.blog {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  height: 50px;
+  margin-right: 20px;
+}
+.thumblin img {
+  width: 200px;
+  margin-right: 20px;
+}
+@media (max-width: 992px) {
+  .top-players,
+  .courses {
+    /* jodi width 0 to 992 er majhe thake taile nicher style apply hobe */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 668px) {
+  .top-players,
+  .courses {
+    /* jodi width 0 to 992 er majhe thake taile nicher style apply hobe */
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 668px) {
+  .blog-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    display: block;
+  }
+}
+.course-info {
+  display: flex;
+}
+.courses img {
+  width: 200px;
+}
+.duration {
+  margin-left: 10px;
+  background-color: rgba(250, 165, 165, 0.486);
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.fill {
+  color: gold;
+}
+.unfill {
+  color: rgb(160, 160, 160);
+}
+.footer {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
